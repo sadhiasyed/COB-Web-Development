@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="app-heading">
+            <div class="app-heading__title">T0 DO LIST</div>
+            <div class="app-heading__sub-title">HAlEEMA SADHIA SYED</div>
+        </div>
+        <div class="app-todo">
+            <ul class="app-todo__list">
+                <li class="app-todo__item">
+                    <span class="app-todo__icon-tick material-icons">check_box_outline_blank</span>
+                    <span class="app-todo__text app-todo__task-text">Codes on Bytes</span>
+                    <span class="app-todo__icon-delete material-icons">delete_outline</span>
+                </li>
+            </ul>
+        </div>
+        <div class="app-new">
+            <form class="app-new__form">
+                <input class="app-new__input" type="text" name="new_task" placeholder="Add a new task">
+            </form>
+            <span class="app-new__submit material-icons">control_point</span>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

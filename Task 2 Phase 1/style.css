@@ -1,0 +1,148 @@
+html {
+    height: 100%;
+    min-height: 800px;
+}
+
+.app-todo::-webkit-scrollbar-track {
+    background: rgb(224, 176, 255);
+}
+
+.app-todo::-webkit-scrollbar-thumb {
+    background: rgb(224, 176, 255);
+}
+
+.app-todo::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.app-todo__list {
+    list-style: none;
+    padding: 0;
+}
+
+.app-heading {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(230, 230, 250);
+    text-align: center;
+}
+
+.app-heading__title {
+    font-family: 'Copperplate', cursive;
+    align-content: center;
+    font-size: 3rem;
+}
+
+.app-heading__sub-title {
+    font-size: 1rem;
+}
+
+.app-container {
+    margin: 50px;
+    border: 3px solid rgb(134, 131, 131);
+    padding: 30px;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(224, 176, 255);
+    font-family: 'Monaco', sans-serif;
+}
+
+body {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.app-todo {
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: rgb(230, 230, 250);
+}
+
+.app-todo::-webkit-scrollbar {
+    width: 10px;
+}
+
+.app-todo__item {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-todo__item:hover {
+    cursor: pointer;
+}
+
+.app-todo__icon-tick {
+    font-size: 2rem;
+    min-width: 50px;
+}
+
+.app-todo__text {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    flex-wrap: nowrap;
+}
+
+.app-todo__text.crossed-out {
+    text-decoration: line-through;
+}
+
+.app-todo__text {
+    cursor: pointer;
+}
+
+.app-todo__icon-delete {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+
+.app-todo__icon-delete {
+    cursor: pointer;
+}
+
+.app-new {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230, 230, 250);
+}
+
+.app-new__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+.app-new__input {
+    vertical-align: middle;
+    margin: 0;
+    width: 95%;
+    background: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    outline-width: 0;
+    font-family: 'Monaco', sans-serif;
+}
+
+.app-new__submit {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: right;
+}
+
+.app-new__submit:hover {
+    cursor: pointer;
+}
